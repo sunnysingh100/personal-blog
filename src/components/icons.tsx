@@ -1,14 +1,18 @@
 import {cx} from "@/utils";
 import React from "react";
 
-export const SunIcon = ({className, ...rest}) => (
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  className?: string;
+}
+
+export const SunIcon = ({className, ...rest}: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
     viewBox="0 0 24 24"
     {...rest}
-    className={cx("w-full h-auto", className)}
+    className={cx("w-full h-auto", className ?? "")}
   >
     <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
     <g
@@ -157,14 +161,14 @@ export const SunIcon = ({className, ...rest}) => (
   </svg>
 );
 
-export const MoonIcon = ({className, ...rest}) => (
+export const MoonIcon = ({className, ...rest}: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
     viewBox="0 0 24 24"
     {...rest}
-    className={cx("w-full h-auto", className)}
+    className={cx("w-full h-auto", className ?? "")}
   >
     <g
       fill="none"
@@ -335,14 +339,14 @@ export const MoonIcon = ({className, ...rest}) => (
   </svg>
 );
 
-export const LinkedinIcon = ({className, ...rest}) => {
+export const LinkedinIcon = ({className, ...rest}: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={42}
       height={43}
       viewBox="0 0 42 43"
-      className={cx("w-full h-auto", className)}
+      className={cx("w-full h-auto", className ?? "")}
       {...rest}
     >
       <g clipPath="url(#a)">
@@ -364,14 +368,14 @@ export const LinkedinIcon = ({className, ...rest}) => {
   );
 };
 
-export const TwitterIcon = ({className, ...rest}) => {
+export const TwitterIcon = ({className, ...rest}: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={42}
       height={43}
       viewBox="0 0 42 43"
-      className={cx("w-full h-auto", className)}
+      className={cx("w-full h-auto", className ?? "")}
       {...rest}
     >
       <g clipPath="url(#a)">
@@ -389,14 +393,14 @@ export const TwitterIcon = ({className, ...rest}) => {
   );
 };
 
-export const GithubIcon = ({className, ...rest}) => {
+export const GithubIcon = ({className, ...rest}: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={42}
       height={44}
       viewBox="0 0 42 44"
-      className={cx("w-full h-auto", className)}
+      className={cx("w-full h-auto", className ?? "")}
       {...rest}
     >
       <path
@@ -409,14 +413,14 @@ export const GithubIcon = ({className, ...rest}) => {
   );
 };
 
-export const DribbbleIcon = ({className, ...rest}) => {
+export const DribbbleIcon = ({className, ...rest}: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={42}
       height={43}
       viewBox="0 0 42 43"
-      className={cx("w-full h-auto", className)}
+      className={cx("w-full h-auto", className ?? "")}
       {...rest}
     >
       <g clipPath="url(#a)">
