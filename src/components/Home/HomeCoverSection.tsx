@@ -8,7 +8,6 @@ import Image from "next/image";
 export default function HomeCoverSection({blogs}: {blogs: Blog[]}) {
   const sortedBlogs = sortBlogs(blogs);
   const blog = sortedBlogs[0];
-  console.log(blog);
 
   return (
     <div className="inline-block w-full">
