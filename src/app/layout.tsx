@@ -1,9 +1,9 @@
 import type {Metadata} from "next";
 import {Inter, Manrope} from "next/font/google";
 import "./globals.css";
-import {ThemeProvider} from "@/components/theme-provider";
-import {cx} from "@/utils";
-import Header from "@/components/Header";
+import Header from "src/components/Header";
+import {ThemeProvider} from "src/components/theme-provider";
+import {cx} from "src/utils";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cx(
           inter.variable,

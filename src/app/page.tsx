@@ -1,9 +1,9 @@
-import React from "react";
-
+import {allBlogs} from "contentlayer/generated";
+import HomeCoverSection from "src/components/Home/HomeCoverSection";
 function page() {
   return (
-    <div className="mt-32">
-      <h1>Hello World</h1>
+    <div className="flex flex-col justify-center items-center">
+      <HomeCoverSection blogs={allBlogs} />
     </div>
   );
 }

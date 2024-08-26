@@ -1,4 +1,4 @@
-import {cx} from "@/utils";
+import {cx} from "src/utils";
 import React from "react";
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {

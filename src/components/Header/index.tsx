@@ -13,7 +13,7 @@ import {
 import {useState} from "react";
 import {Divide as Hamburger} from "hamburger-react";
 import {useTheme} from "next-themes";
-import {cx} from "@/utils";
+import {cx} from "src/utils";
 
 function Header() {
   const [click, setClick] = useState(false);
