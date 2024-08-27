@@ -4,6 +4,7 @@ import Link from "next/link";
 import {sortBlogs} from "src/utils";
 import Tag from "../Elements/Tag";
 import Image from "next/image";
+import {slug} from "github-slugger";
 
 export default function HomeCoverSection({blogs}: {blogs: Blog[]}) {
   const sortedBlogs = sortBlogs(blogs);
@@ -30,7 +31,7 @@ export default function HomeCoverSection({blogs}: {blogs: Blog[]}) {
 
         <div className="z-0 flex flex-col items-start justify-center w-full p-6 lg:w-3/4 sm:p-8 md:p-12 lg:p-16 text-light">
           <Tag
-            link={`/categories/${blog.tags?.[0]}`}
+            link={`/categories/${slug(blog.tags?.[0] ?? "")}`}
             name={blog.tags?.[0] ?? ""}
           />
           <Link href={blog.url} className="mt-6">

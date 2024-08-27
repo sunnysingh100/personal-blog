@@ -12,13 +12,15 @@
     "@lottiefiles/dotlottie-react": "^0.8.10",
     "contentlayer": "^0.3.4",
     "date-fns": "^3.6.0",
+    "github-slugger": "^2.0.0",
     "hamburger-react": "^2.5.1",
     "next": "14.2.6",
     "next-contentlayer": "^0.3.4",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.53.0"
+    "react-hook-form": "^7.53.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

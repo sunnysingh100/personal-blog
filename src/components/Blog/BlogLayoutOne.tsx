@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Tag from "../Elements/Tag";
 import {Blog} from "contentlayer/generated";
+import {slug} from "github-slugger";
 
 function BlogLayoutOne({blog}: {blog: Blog}) {
   return (
@@ -24,7 +25,7 @@ function BlogLayoutOne({blog}: {blog: Blog}) {
 
       <div className="absolute bottom-0 z-20 w-full p-4 xs:p-6 sm:p-10">
         <Tag
-          link={`/categories/${blog.tags?.[0]}`}
+          link={`/categories/${slug(blog.tags?.[0] ?? "")}`}
           name={blog.tags?.[0] ?? ""}
           className="px-6 text-xs  sm:text-sm py-1 sm:py-2 !border "
         />

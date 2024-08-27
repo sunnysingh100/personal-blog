@@ -6,7 +6,6 @@ import BlogLayoutTwo from "../Blog/BlogLayoutTwo";
 
 function FeaturedPost({blogs}: {blogs: Blog[]}) {
   const sortedBlogs = sortBlogs(blogs);
-  console.log(sortedBlogs);
 
   return (
     <section className="flex flex-col items-center justify-center w-full px-5 mt-16 sm:mt-24 md:mt-32 sm:px-10 md:px-24 sxl:px-32">
