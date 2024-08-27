@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.8.10",
     "contentlayer": "^0.3.4",
     "date-fns": "^3.6.0",
     "hamburger-react": "^2.5.1",

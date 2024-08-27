@@ -4,14 +4,14 @@ import Link from "next/link";
 import {DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon} from "../icons";
 
 type FormValues = {
-  email?: string;
+  email: string;
 };
 
 function Footer() {
-  const {register, handleSubmit, reset} = useForm();
+  const {register, handleSubmit, reset} = useForm<FormValues>();
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    reset();
     console.log(data);
+    reset();
   };
 
   return (
