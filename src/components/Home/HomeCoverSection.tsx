@@ -44,7 +44,7 @@ export default function HomeCoverSection({blogs}: {blogs: Blog[]}) {
               </span>
             </h1>
           </Link>
-          <p className="hidden mt-4 sm:inline-block md:text-lg lg:text-xl font-in">
+          <p className="hidden mt-4 sm:inline-block md:text-lg lg:text-xl font-inter">
             {blog.description}
           </p>
         </div>
