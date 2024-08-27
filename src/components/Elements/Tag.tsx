@@ -8,6 +8,7 @@ function Tag({
 }: {
   link?: string;
   name: string;
+
   [key: string]: any;
 }) {
   return (
