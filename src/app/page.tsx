@@ -4,8 +4,6 @@ import FeaturedPost from "src/components/Home/FeaturedPost";
 import HomeCoverSection from "src/components/Home/HomeCoverSection";
 import RecentPost from "src/components/Home/RecentPost";
 function page() {
-  console.log(allBlogs[0]);
-
   return (
     <div className="flex flex-col justify-center items-center">
       <HomeCoverSection blogs={allBlogs} />
