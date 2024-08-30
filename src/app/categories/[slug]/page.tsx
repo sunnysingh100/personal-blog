@@ -47,7 +47,6 @@ export default function CategoryPage({params}: {params: Params}) {
       return slugifiedTag === params.slug;
     });
   });
-  console.log(blogs);
 
   return (
     <article className="flex flex-col mt-12 mb-24 text-dark dark:text-light">
