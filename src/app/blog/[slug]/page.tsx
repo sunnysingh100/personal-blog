@@ -90,6 +90,10 @@ export default function BlogPage({params}: {params: Params}) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
+      />
       <article>
         {/* header */}
         <div className="relative mb-8 text-center w-full h-[70vh] bg-dark">
