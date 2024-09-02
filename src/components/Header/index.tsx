@@ -14,6 +14,7 @@ import {useState} from "react";
 import {Divide as Hamburger} from "hamburger-react";
 import {useTheme} from "next-themes";
 import {cx} from "src/utils";
+import siteMetadata from "@/utils/siteMetaData";
 
 function Header() {
   const [click, setClick] = useState(false);
@@ -87,7 +88,7 @@ function Header() {
       {/* icons */}
       <div className="items-center hidden sm:flex">
         <a
-          href="/"
+          href={siteMetadata.linkedin}
           rel="noopener noreferrer"
           className="inline-block w-6 h-6 mr-4"
           aria-label="Reach out to me via LinkedIn"
@@ -96,7 +97,7 @@ function Header() {
           <LinkedinIcon className="transition-all duration-200 hover:scale-125 ease" />
         </a>
         <a
-          href="/"
+          href={siteMetadata.twitter}
           rel="noopener noreferrer"
           className="inline-block w-6 h-6 mr-4"
           aria-label="Reach out to me via Twitter"
@@ -105,7 +106,7 @@ function Header() {
           <TwitterIcon className="transition-all duration-200 hover:scale-125 ease" />
         </a>
         <a
-          href="/"
+          href={siteMetadata.github}
           rel="noopener noreferrer"
           className="inline-block w-6 h-6 mr-4"
           aria-label="Check my profile on Github"
@@ -114,7 +115,7 @@ function Header() {
           <GithubIcon className="transition-all duration-200 hover:scale-125 ease dark:fill-light" />
         </a>
         <a
-          href="/"
+          href={siteMetadata.dribbble}
           rel="noopener noreferrer"
           className="inline-block w-6 h-6 mr-4"
           aria-label="Check my profile on Dribbble"

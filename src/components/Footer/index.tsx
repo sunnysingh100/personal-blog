@@ -2,6 +2,7 @@
 import {useForm, SubmitHandler} from "react-hook-form";
 import Link from "next/link";
 import {DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon} from "../icons";
+import siteMetadata from "@/utils/siteMetaData";
 
 type FormValues = {
   email: string;
@@ -44,7 +45,7 @@ function Footer() {
       {/* Social Links */}
       <div className="flex items-center mt-8">
         <a
-          href="/"
+          href={siteMetadata.linkedin}
           className="inline-block w-6 h-6 mr-4"
           aria-label="Reach out to me via LinkedIn"
           target="_blank"
@@ -53,7 +54,7 @@ function Footer() {
           <LinkedinIcon className="transition-all duration-200 hover:scale-125 ease" />
         </a>
         <a
-          href="/"
+          href={siteMetadata.twitter}
           className="inline-block w-6 h-6 mr-4"
           aria-label="Reach out to me via Twitter"
           target="_blank"
@@ -62,7 +63,7 @@ function Footer() {
           <TwitterIcon className="transition-all duration-200 hover:scale-125 ease" />
         </a>
         <a
-          href="/"
+          href={siteMetadata.github}
           className="inline-block w-6 h-6 mr-4 fill-light"
           aria-label="Check my profile on Github"
           target="_blank"
@@ -71,7 +72,7 @@ function Footer() {
           <GithubIcon className="transition-all duration-200 fill-light dark:fill-dark hover:scale-125 ease" />
         </a>
         <a
-          href="/"
+          href={siteMetadata.dribbble}
           className="inline-block w-6 h-6 mr-4"
           aria-label="Check my profile on Dribbble"
           target="_blank"
